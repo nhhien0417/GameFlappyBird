@@ -1,0 +1,112 @@
+{
+    "skeleton": {
+        "hash": "o9cJ02z4GeN4ngZPhYYyDJSBD2U",
+        "spine": "4.0",
+        "x": -47.5,
+        "y": -51.12,
+        "width": 95,
+        "height": 93.62,
+        "images": "",
+        "audio": ""
+    },
+    "bones": [
+        {
+            "name": "root"
+        },
+        {
+            "name": "Bird",
+            "parent": "root",
+            "x": -0.33,
+            "y": 0.12
+        },
+        {
+            "name": "Bird2",
+            "parent": "Bird",
+            "length": 25.5,
+            "rotation": -178.39,
+            "x": -7.54,
+            "y": -20.82
+        }
+    ],
+    "slots": [
+        {
+            "name": "Bird",
+            "bone": "Bird",
+            "attachment": "Bird"
+        },
+        {
+            "name": "Wing",
+            "bone": "Bird2",
+            "attachment": "Wing"
+        }
+    ],
+    "skins": [
+        {
+            "name": "default",
+            "attachments": {
+                "Bird": {
+                    "Bird": {
+                        "x": 0.33,
+                        "y": -0.12,
+                        "width": 95,
+                        "height": 85
+                    }
+                },
+                "Wing": {
+                    "Wing": {
+                        "x": -8.21,
+                        "y": -11.86,
+                        "rotation": 178.39,
+                        "width": 95,
+                        "height": 85
+                    }
+                }
+            }
+        }
+    ],
+    "animations": {
+        "Fly": {
+            "bones": {
+                "Bird2": {
+                    "rotate": [
+                        {
+                            "value": -1.61
+                        },
+                        {
+                            "time": 0.1,
+                            "value": -16.61
+                        },
+                        {
+                            "time": 0.2,
+                            "value": -31.61
+                        },
+                        {
+                            "time": 0.3,
+                            "value": -16.61
+                        },
+                        {
+                            "time": 0.4,
+                            "value": -1.61
+                        },
+                        {
+                            "time": 0.5,
+                            "value": 13.39
+                        },
+                        {
+                            "time": 0.6,
+                            "value": 28.39
+                        },
+                        {
+                            "time": 0.7,
+                            "value": 13.39
+                        },
+                        {
+                            "time": 0.8,
+                            "value": -1.61
+                        }
+                    ]
+                }
+            }
+        }
+    }
+}
